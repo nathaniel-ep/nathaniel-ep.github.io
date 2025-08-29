@@ -113,7 +113,7 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
           ${A.title}
         `,children:n.split(" ").map((U,_)=>D.jsx(_t.span,{className:"inline-block mr-3 sm:mr-4 md:mr-5",initial:{opacity:0,y:100,rotateX:-90,filter:"blur(4px)"},animate:m?{opacity:1,y:0,rotateX:0,filter:"blur(0px)",transition:{delay:.8+_*.15,duration:.8,ease:[.25,.46,.45,.94]}}:{},whileHover:{color:u==="light"?"#2C8FA3":"#58C4B8",transition:{duration:.3}},style:{transformStyle:"preserve-3d"},children:U},_))})}),s&&D.jsx(_t.div,{variants:p,className:"max-w-7xl",children:D.jsx("p",{className:`
             text-lg sm:text-xl md:text-2xl lg:text-3xl
-            leading-relaxed font-light italic
+            leading-relaxed font-light
             ${A.description}
           `,children:s.split(" ").map((U,_)=>{const H=["technologie","eau","durable","locale","air"].some(L=>U.toLowerCase().includes(L.toLowerCase()));return D.jsx(_t.span,{className:"inline-block mr-2",initial:{opacity:0,scale:.8,filter:"blur(2px)"},animate:m?{opacity:1,scale:1,filter:"blur(0px)",transition:{delay:1.5+_*.08,duration:.6,ease:"easeOut"}}:{},whileHover:{scale:1.05,color:H?u==="light"?"#2C8FA3":"#58C4B8":u==="light"?"#58C4B8":"#A8DCE7",transition:{duration:.2}},children:U},_)})})}),D.jsx(_t.div,{initial:{opacity:0,scale:.8},animate:m?{opacity:.03,scale:1,transition:{delay:2,duration:2}}:{},className:`
           absolute inset-0 pointer-events-none
