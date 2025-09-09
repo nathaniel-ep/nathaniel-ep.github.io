@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // SPA redirect for GitHub Pages
+      // For user pages (user.github.io), keep segmentCount = 0
+      // For project pages (user.github.io/repo), set segmentCount = 1
+      (function () {
+        var segmentCount = 0;
+        var l = window.location;
+        var newUrl =
+          l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname
+            .split('/')
+            .slice(0, 1 + segmentCount)
+            .join('/') +
+          '/?/' +
+          l.pathname
+            .slice(1)
+            .split('/')
+            .slice(segmentCount)
+            .join('/') +
+          (l.search ? '&' + l.search.slice(1) : '') +
+          l.hash;
+        l.replace(newUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting…
+  </body>
+  <!--
+    This file enables client-side routing on GitHub Pages by redirecting
+    unknown paths to the SPA entry while preserving the original path.
+  -->
+</html>
+
