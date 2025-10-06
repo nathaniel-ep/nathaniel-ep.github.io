@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Bloque explicitement les dossiers techniques
+Disallow: /api/
+
+Sitemap: https://ovao.fr/sitemap.xml
